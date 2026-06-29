@@ -39,6 +39,13 @@ export const API_ENDPOINTS = {
     rates: '/currency/rates',
     convert: '/currency/convert',
   },
+  reports: {
+    catalog: '/reports/catalog',
+    history: '/reports/history',
+    generate: '/reports/generate',
+    jobStatus: (id: string) => `/reports/jobs/${id}`,
+    download: (id: string) => `/reports/${id}/download`,
+  },
   health: '/health',
   admin: {
     overview: '/admin/overview',
